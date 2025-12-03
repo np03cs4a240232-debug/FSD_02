@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Man Bhadur Chhetri - Portfolio</title>
+
+    <!-- LINKED CSS FILE -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="hero">
+        <video id="video-background" autoplay loop muted playsinline>
+            <source src="VIDEO.mp4" type="video/mp4">
+        </video>
+
+        <nav class="navbar">
+            <a href="#hero" class="logo">Man Bhadur Chhetri</a>
+
+            <button id="menu-button" class="menu-toggle" aria-expanded="false">☰</button>
+
+            <ul class="nav-links" id="primary-navigation">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-content">
+            <h1>Hi — I'm <span class="accent">Man Bhadur Chhetri</span></h1>
+            <p class="lead">Frontend Developer & UI/UX Enthusiast</p>
+            <a href="#projects" class="cta">View My Projects</a>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I am a frontend developer from Kathmandu, Nepal. I build modern, responsive,
+                        and user-friendly websites using HTML, CSS, JavaScript, and UI/UX principles.
+                    </p>
+                </div>
+
+                <div class="about-meta">
+                    <ul>
+                        <li><strong>Name:</strong> Man Bhadur Chhetri</li>
+                        <li><strong>City:</strong> Kathmandu</li>
+                        <li><strong>Country:</strong> Nepal</li>
+                        <li><strong>Email:</strong> chhetrisac@gmail.com.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2>Skills</h2>
+
+            <div class="skills-row">
+                <div class="skill"><div class="skill-icon">💻</div>HTML5</div>
+                <div class="skill"><div class="skill-icon">🎨</div>CSS3</div>
+                <div class="skill"><div class="skill-icon">⚙️</div>JavaScript</div>
+                <div class="skill"><div class="skill-icon">📱</div>Responsive Design</div>
+                <div class="skill"><div class="skill-icon">🌐</div>UI / UX</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="project1.jpg" alt="">
+                    </div>
+                    <div class="project-body">
+                        <h3>Portfolio Website</h3>
+                        <p>Modern responsive portfolio built using HTML, CSS, and JS.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-thumb">
+                        <img src="project2.jpg" alt="">
+                    </div>
+                    <div class="project-body">
+                        <h3>UI Component Library</h3>
+                        <p>Reusable UI elements built with pure CSS and Flexbox.</p>
+                        <div class="project-tags">
+                            <span>CSS</span>
+                            <span>UI</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container narrow">
+            <h2>Contact Me</h2>
+
+            <form id="contact-form">
+                <div class="form-row">
+                    <label>Name *</label>
+                    <input type="text" id="name" />
+                    <div id="error-name" class="error"></div>
+                </div>
+
+                <div class="form-row">
+                    <label>Email *</label>
+                    <input type="email" id="email" />
+                    <div id="error-email" class="error"></div>
+                </div>
+
+                <div class="form-row">
+                    <label>Message</label>
+                    <textarea id="message" rows="6"></textarea>
+                </div>
+
+                <div id="form-message" class="form-message"></div>
+
+                <button class="btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© <span id="year"></span> Man Bhadur Chhetri — Kathmandu, Nepal.</p>
+    </footer>
+
+    <!-- LINKED JS FILE -->
+    <script src="style.js"></script>
+</body>
+</html>
