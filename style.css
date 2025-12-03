@@ -281,7 +281,27 @@ body {
 }
 
 .error {
-  color: red;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+}
+
+.form-message {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Input error indicator */
+.input-error {
+  border-color: #ff6b6b !important;
+  box-shadow: 0 0 0 3px rgba(255,107,107,0.08);
+}
+
+/* Smooth transition for inputs */
+.form-row input,
+.form-row textarea {
+  transition: box-shadow 120ms ease, border-color 120ms ease;
 }
 
 .form-message {

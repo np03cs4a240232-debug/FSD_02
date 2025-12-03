@@ -56,7 +56,7 @@
                         <li><strong>Name:</strong> Man Bhadur Chhetri</li>
                         <li><strong>City:</strong> Kathmandu</li>
                         <li><strong>Country:</strong> Nepal</li>
-                        <li><strong>Email:</strong> chhetrisac@gmail.com.com</li>
+                        <li><strong>Email:</strong> chhetrisac@gmail.com</li>
                     </ul>
                 </div>
             </div>
@@ -121,25 +121,26 @@
         <div class="container narrow">
             <h2>Contact Me</h2>
 
-            <form id="contact-form">
+            <form id="contact-form" novalidate>
                 <div class="form-row">
-                    <label>Name *</label>
-                    <input type="text" id="name" />
-                    <div id="error-name" class="error"></div>
+                    <label for="name">Name *</label>
+                    <input type="text" id="name" name="name" aria-describedby="error-name" required />
+                    <div id="error-name" class="error" aria-live="polite"></div>
                 </div>
 
                 <div class="form-row">
-                    <label>Email *</label>
-                    <input type="email" id="email" />
-                    <div id="error-email" class="error"></div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" aria-describedby="error-email" required />
+                    <div id="error-email" class="error" aria-live="polite"></div>
                 </div>
 
                 <div class="form-row">
-                    <label>Message</label>
-                    <textarea id="message" rows="6"></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6"></textarea>
+                    <div id="error-message" class="error" aria-live="polite"></div>
                 </div>
 
-                <div id="form-message" class="form-message"></div>
+                <div id="form-message" class="form-message" aria-live="polite"></div>
 
                 <button class="btn" type="submit">Send Message</button>
             </form>
@@ -151,6 +152,6 @@
     </footer>
 
     <!-- LINKED JS FILE -->
-    <script src="style.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
